@@ -14,15 +14,16 @@ namespace ToDoListApp.Commands
 
 		public bool CanExecute(object parameter)
 		{
+			return true;
 			// CanExecuteChanged?.Invoke(this, EventArgs.Empty);
-			if (parameter is MainViewModel viewModel)
-			{
-				return !string.IsNullOrWhiteSpace(viewModel.EnteredTaskName);
-			}
-			else
-			{
-				return false;
-			}
+			//if (parameter is MainViewModel viewModel)
+			//{
+			//	return !string.IsNullOrWhiteSpace(viewModel.EnteredTaskName);
+			//}
+			//else
+			//{
+			//	return false;
+			//}
 		}
 
 		public void Execute(object parameter)

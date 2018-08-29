@@ -9,8 +9,10 @@ namespace ToDoListApp.ViewModels
 {
 	class MainViewModel
 	{
-		public string EnteredTaskName { get; set; }
-		public List<TaskViewModels> Tasks { get; set; }
+		private string enteredTaskName = "";
+		private List<TaskViewModels> tasks = new List<TaskViewModels>();
+		public string EnteredTaskName { get { return enteredTaskName; } set { enteredTaskName = value; } }
+		public List<TaskViewModels> Tasks { get { return tasks; } set { tasks = value; } }
 		public CreateTaskCommand CreateTask => new CreateTaskCommand();
 	}
 
