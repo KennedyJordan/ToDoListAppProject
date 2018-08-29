@@ -34,6 +34,10 @@ namespace ToDoListApp.Commands
 				viewModel.EnteredTaskName = "";
 				CanExecuteChanged.Invoke(this, EventArgs.Empty);
 			}
+			else
+			{
+				return;
+			}
 		}
 	}
 }
