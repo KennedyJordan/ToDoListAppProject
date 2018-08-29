@@ -21,7 +21,7 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="1" HorizontalAlignment="Stretch">Add Task</Button>
+                <Button Grid.Column="1" HorizontalAlignment="Stretch" Command="{Binding CreateTask}">Add Task</Button>
             </Grid>
         </StackPanel>
         <StackPanel Grid.Column="2">
